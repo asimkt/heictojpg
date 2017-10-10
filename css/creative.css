@@ -9,7 +9,7 @@ html {
   height: 100%; }
 
 body {
-  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif; }
+  font-family: 'EB Garamond', 'Helvetica Neue', Arial, serif; }
 
 hr {
   max-width: 50px;
@@ -33,7 +33,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
+  font-family: 'Muli', 'Helvetica Neue', Arial, sans-serif; }
 
 p {
   font-size: 16px;
@@ -48,13 +48,28 @@ p {
   background-color: #175583 !important; }
 
 .text-faded {
-  color: rgba(255, 255, 255, 0.7); }
+  color: rgba(255, 255, 255, 0.85); }
+
+.intro {
+  font-weight: 300;
+  font-size: 22px;
+  margin-bottom: 45px;
+  margin-top: 25px;
+  letter-spacing: 1px; }
+  .intro strong {
+    font-weight: bold; }
 
 section {
-  padding: 100px 0; }
+  padding: 145px 0; }
 
 .section-heading {
-  margin-top: 0; }
+  margin-top: 0;
+  font-size: 2.3rem;
+  margin-bottom: 30px; }
+
+.contact p {
+  margin-bottom: 40px;
+  font-style: 20px; }
 
 ::-moz-selection {
   color: white;
@@ -80,7 +95,7 @@ body {
 #mainNav {
   border-color: rgba(23, 85, 131, 0.05);
   background-color: white;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Muli', 'Helvetica Neue', Arial, sans-serif;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s; }
@@ -88,7 +103,7 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     color: #0aa7ed;
-    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
+    font-family: 'Muli', 'Helvetica Neue', Arial, sans-serif; }
     #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
       color: #0aa7ed; }
     #mainNav .navbar-brand img {
@@ -111,7 +126,7 @@ body {
       color: #0aa7ed; }
     #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active,
     #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
-      color: #0aa7ed !important;
+      color: #fff !important;
       background-color: transparent; }
       #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover,
       #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
@@ -207,9 +222,12 @@ header.masthead {
   margin: 50px auto 0; }
   @media (min-width: 992px) {
     .service-box {
-      margin: 20px auto 0; } }
+      margin: 40px auto 0; } }
   .service-box p {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    padding: 0 40px; }
+  .service-box i {
+    margin-bottom: 20px; }
 
 .portfolio-box {
   position: relative;
@@ -238,7 +256,7 @@ header.masthead {
       .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
       .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
         padding: 0 15px;
-        font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
+        font-family: 'Muli', 'Helvetica Neue', Arial, sans-serif; }
       .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
         font-size: 14px;
         font-weight: 600;
@@ -256,9 +274,9 @@ header.masthead {
       font-size: 22px; } }
 
 .call-to-action {
-  padding: 50px 0; }
+  padding: 70px 0; }
   .call-to-action h2 {
-    margin: 0 auto 20px; }
+    margin: 0 auto 30px; }
 
 .text-primary {
   color: #0aa7ed !important; }
@@ -346,7 +364,7 @@ header.masthead {
   text-transform: uppercase;
   border: none;
   border-radius: 300px;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
+  font-family: 'Muli', 'Helvetica Neue', Arial, sans-serif; }
 
 .btn-xl {
   padding: 15px 30px; }
