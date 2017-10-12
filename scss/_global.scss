@@ -3,6 +3,7 @@ body,
 html {
   width: 100%;
   height: 100%;
+  color: $gray-base;
 }
 
 body {
@@ -58,13 +59,14 @@ p {
 
 .intro {
   font-weight: 300;
-  font-size: 22px;
+  font-size: 18px;
   margin-bottom: 45px;
   margin-top: 25px;
   letter-spacing: 1px;
   strong {
     font-weight: bold;
   }
+  color: #ececec;
 }
 
 section {
@@ -74,13 +76,23 @@ section {
 .section-heading {
   margin-top: 0;
   font-size: 2.3rem;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .contact p {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   font-style: 20px;
+  font-weight: 300;
+  width: 90%;
+  line-height: 1.7;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+.contact-details {
+  @include sans-serif-font;
+}
+
 
 ::-moz-selection {
   color: white;

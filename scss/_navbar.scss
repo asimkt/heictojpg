@@ -34,6 +34,8 @@
         font-weight: 700;
         text-transform: uppercase;
         color: $gray-darker;
+        padding: 5px 25px;
+        letter-spacing: 1.5px;
         &:hover {
           color: $theme-primary;
         }
@@ -64,7 +66,10 @@
         color: $gray-darker;
       }
     }
+    padding-top: 25px;
+    transition: padding .3s;
     &.navbar-shrink {
+      padding-top: .5rem;
       border-color: fade-out($gray-darker, .95);
       background-color: $gray-darker;
       .navbar-brand {

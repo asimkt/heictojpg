@@ -6,10 +6,11 @@
 body,
 html {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  color: #0d2f49; }
 
 body {
-  font-family: 'EB Garamond', 'Helvetica Neue', Arial, serif; }
+  font-family: 'Merriweather', 'EB Garamond', Arial, serif; }
 
 hr {
   max-width: 50px;
@@ -52,10 +53,11 @@ p {
 
 .intro {
   font-weight: 300;
-  font-size: 22px;
+  font-size: 18px;
   margin-bottom: 45px;
   margin-top: 25px;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  color: #ececec; }
   .intro strong {
     font-weight: bold; }
 
@@ -65,11 +67,19 @@ section {
 .section-heading {
   margin-top: 0;
   font-size: 2.3rem;
-  margin-bottom: 30px; }
+  margin-bottom: 20px; }
 
 .contact p {
-  margin-bottom: 40px;
-  font-style: 20px; }
+  margin-bottom: 60px;
+  font-style: 20px;
+  font-weight: 300;
+  width: 90%;
+  line-height: 1.7;
+  margin-left: auto;
+  margin-right: auto; }
+
+.contact-details {
+  font-family: 'Muli', 'Helvetica Neue', Arial, sans-serif; }
 
 ::-moz-selection {
   color: white;
@@ -120,7 +130,9 @@ body {
     font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #175583; }
+    color: #175583;
+    padding: 5px 25px;
+    letter-spacing: 1.5px; }
     #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover,
     #mainNav .navbar-nav > li.nav-item > a.nav-link:hover {
       color: #0aa7ed; }
@@ -134,7 +146,9 @@ body {
   @media (min-width: 992px) {
     #mainNav {
       border-color: rgba(255, 255, 255, 0.3);
-      background-color: transparent; }
+      background-color: transparent;
+      padding-top: 25px;
+      transition: padding .3s; }
       #mainNav .navbar-brand {
         color: rgba(23, 85, 131, 0.7); }
         #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
@@ -146,6 +160,7 @@ body {
         #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
           color: #175583; }
       #mainNav.navbar-shrink {
+        padding-top: .5rem;
         border-color: rgba(23, 85, 131, 0.05);
         background-color: #175583; }
         #mainNav.navbar-shrink .navbar-brand {
@@ -225,9 +240,15 @@ header.masthead {
       margin: 40px auto 0; } }
   .service-box p {
     margin-bottom: 0;
-    padding: 0 40px; }
+    padding: 5px 0px;
+    font-weight: 300; }
   .service-box i {
-    margin-bottom: 20px; }
+    margin-bottom: 25px; }
+  .service-box h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 700; }
 
 .portfolio-box {
   position: relative;
@@ -277,6 +298,9 @@ header.masthead {
   padding: 70px 0; }
   .call-to-action h2 {
     margin: 0 auto 30px; }
+
+.btn-cta {
+  letter-spacing: 2px; }
 
 .text-primary {
   color: #0aa7ed !important; }
@@ -367,4 +391,5 @@ header.masthead {
   font-family: 'Muli', 'Helvetica Neue', Arial, sans-serif; }
 
 .btn-xl {
-  padding: 15px 30px; }
+  padding: 18px 40px;
+  letter-spacing: 1.5px; }
