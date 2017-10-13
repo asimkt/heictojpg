@@ -4,6 +4,7 @@
   background-color: white;
   @include sans-serif-font;
   @include transition-all;
+  padding-top: 25px;
   .navbar-brand {
     font-weight: 700;
     text-transform: uppercase;

@@ -1,71 +1,34 @@
 (function($) {
   "use strict"; // Start of use strict
 
-  // Smooth scrolling using jQuery easing
-  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: (target.offset().top - 48)
-        }, 1000, "easeInOutExpo");
-        return false;
-      }
-    }
-  });
+    var label = $('input[type="file"]').parents('.form-group').find('label').text();
+    label = (label) ? label : 'Upload File';
 
-  // Closes responsive menu when a scroll trigger link is clicked
-  $('.js-scroll-trigger').click(function() {
-    $('.navbar-collapse').collapse('hide');
-  });
+    // wrap the file input
+    $('input[type="file"]').wrap('<div class="input-file"></div>');
+    // display label
+    $('input[type="file"]').before('<span class="button">'+label+'</span>');
+    // we will display selected file here
+    $('input[type="file"]').before('<span class="file-selected"></span>');
 
-  // Activate scrollspy to add active class to navbar items on scroll
-  $('body').scrollspy({
-    target: '#mainNav',
-    offset: 48
-  });
+    // file input change listener
+    $('input[type="file"]').change(function(e){
+        // Get 'input[type="file"]' file input value
+        var val = $('input[type="file"]').val();
 
-  // Collapse the navbar when page is scrolled
-  $(window).scroll(function() {
-    if ($("#mainNav").offset().top > 100) {
-      $("#mainNav").addClass("navbar-shrink");
-    } else {
-      $("#mainNav").removeClass("navbar-shrink");
-    }
-  });
+        // Let's only show filename.
+        // By default file input value is a fullpath, something like
+        // C:\fakepath\Nuriootpa1.jpg depending on your browser.
+        var filename = val.replace(/^.*[\\\/]/, '');
 
-  // Scroll reveal calls
-  window.sr = ScrollReveal();
-  sr.reveal('.sr-icons', {
-    duration: 600,
-    scale: 0.3,
-    distance: '0px'
-  }, 200);
-  sr.reveal('.sr-button', {
-    duration: 1000,
-    delay: 200
-  });
-  sr.reveal('.sr-contact', {
-    duration: 600,
-    scale: 0.3,
-    distance: '0px'
-  }, 300);
+        // Display the filename
+        $('input[type="file"]').siblings('.file-selected').text('File selected. Click again to change it.');
+        $('input[type="file"]').siblings('.button').text(filename);
+        $('input[type="submit"]').removeClass('disabled');
+    });
 
-  // Magnific popup calls
-  $('.popup-gallery').magnificPopup({
-    delegate: 'a',
-    type: 'image',
-    tLoading: 'Loading image #%curr%...',
-    mainClass: 'mfp-img-mobile',
-    gallery: {
-      enabled: true,
-      navigateByImgClick: true,
-      preload: [0, 1]
-    },
-    image: {
-      tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
-    }
+  // Open the file browser when our custom button is clicked.
+  $('.input-file .button').click(function() {
+      $(this).siblings('input[type="file"]').trigger('click');
   });
-
 })(jQuery); // End of use strict

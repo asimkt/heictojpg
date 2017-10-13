@@ -89,3 +89,65 @@ img::-moz-selection {
 body {
   -webkit-tap-highlight-color: $gray-darker;
 }
+
+.input-file {
+    input[type="file"] {
+        visibility: hidden;
+        width: 1px;
+        height: 1px;
+    }
+
+    .file-selected {
+        font-size: 10px;
+        text-align: center;
+        width: 100%;
+        display: block;
+        margin-top: 5px;
+    }
+}
+
+.input-file {
+  display: block;
+  margin-bottom: 190px !important;
+}
+
+label#largeFile {
+  display: block;
+  margin-bottom: 190px;
+}
+
+label#largeFile:after, .button {
+  position:absolute;
+  width:60%;
+  max-width:800px;
+  content:"Upload your file";
+  left:0;
+  right:0;
+  margin:50px auto;
+  text-align:center;
+  padding:50px 0px 50px 0px;
+  border-radius:10px;
+  border:5px dashed $theme-primary;
+  color:$theme-primary;
+  @include sans-serif-font;
+  font-size:24px;
+  transition: all .3s;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background:$theme-primary;
+  color:$white;
+  cursor:pointer;
+}
+
+.btn.disabled {
+  opacity: .3;
+  pointer-events: none;
+}
+
+
+label#largeFile input#file {
+    width: 0px;
+    height: 0px;
+}
