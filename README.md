@@ -4,9 +4,9 @@ HEIC to JPEG converter converts HEIC files to JPEG format(Whaat..?)
 
 ## Preview
 
-[![Creative Preview](https://startbootstrap.com/assets/img/templates/creative.jpg)](https://blackrockdigital.github.io/startbootstrap-creative/)
+[![Creative Preview](https://converter.asimkt.com/)
 
-**[View Live Preview](https://blackrockdigital.github.io/startbootstrap-creative/)**
+**[View Site](https://converter.asimkt.com/)**
 
 ## Usage
 
