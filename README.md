@@ -4,7 +4,7 @@ HEIC to JPEG converter converts HEIC files to JPEG format(Whaat..?)
 
 ## Preview
 
-[![Creative Preview](https://converter.asimkt.com/)
+[![Creative Preview](https://cdn.pbrd.co/images/GP90QNI.png)
 
 **[View Site](https://converter.asimkt.com/)**
 
